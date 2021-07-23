@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maynard.bruneirestaurantrating.members"
+    android:background="@drawable/background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/eTSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:background="#ffffff"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:inputType="textPersonName"
+                android:textSize="15sp"
+                android:hint="enter resto name and search"/>
+
+            <Button
+                android:id="@+id/btnadd"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="#900"
+                android:text="View Profile"
+                android:padding="5dp"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <ListView
+
+            android:id="@+id/lvresto"
+            android:layout_width="match_parent"
+            android:layout_height="529dp"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+android:id="@+id/d1"
+android:title="Brunei-Muara"
+
+/>
+
+    <item
+        android:id="@+id/d2"
+        android:title="Tutong"
+
+        />
+    <item
+        android:id="@+id/d3"
+        android:title="Temburong"
+
+        />
+    <item
+        android:id="@+id/d4"
+        android:title="Belait"
+
+        />
+</menu>

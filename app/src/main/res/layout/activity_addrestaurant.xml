@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maynard.bruneirestaurantrating.addrestaurant"
+    android:background="@drawable/background">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:text="Restaurant Details"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/ivprofile"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/photoblank"
+            android:background="#FFFFFF"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            />
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="name of restaurant"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="2dp"/>
+
+        <EditText
+            android:id="@+id/etowner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:inputType="text"
+            android:hint="owner"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="2dp"/>
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1.93"
+            android:background="#ffffff"
+            android:ellipsize="end"
+            android:ems="10"
+            android:hint="address or description"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:padding="10dp"
+            android:singleLine="false" />
+
+        <Spinner
+            android:id="@+id/spinType"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/spinnerbg"
+            android:padding="10dp"
+            android:layout_marginBottom="2dp"
+
+            android:textAlignment="center"
+
+            />
+        <Spinner
+            android:id="@+id/spindistrict"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/spinnerbg"
+            android:padding="10dp"
+            android:layout_marginBottom="2dp"
+
+            android:textAlignment="center"
+
+            />
+
+        <Spinner
+            android:id="@+id/spinyear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/spinnerbg"
+            android:padding="10dp"
+            android:layout_marginBottom="2dp"
+
+            android:textAlignment="center"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="2dp">
+
+            <EditText
+                android:id="@+id/etlanglat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="4.885838, 114.931669"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tvhow"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="@string/get_coordinates"
+                android:textAlignment="center"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btndone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+
+            android:layout_marginTop="20dp"
+            android:background="#95251b"/>
+    </LinearLayout>
+
+</ScrollView>

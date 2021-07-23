@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maynard.bruneirestaurantrating.restoprofile">
+
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="13dp"
+
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="19dp"
+       />
+
+    <TextView
+        android:id="@+id/tvResto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivPhoto"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/ivPhoto"
+        android:layout_toRightOf="@+id/ivPhoto"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#800000"/>
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_above="@+id/tvDistrict"
+        android:layout_alignLeft="@+id/tvResto"
+        android:layout_alignStart="@+id/tvResto"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:id="@+id/tvDistrict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textStyle="italic"
+        android:layout_alignBottom="@+id/ivPhoto"
+        android:layout_alignLeft="@+id/tvType"
+        android:layout_alignStart="@+id/tvType" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="TextView"
+        android:layout_below="@+id/ivPhoto"
+        android:layout_alignLeft="@+id/ivPhoto"
+        android:layout_alignStart="@+id/ivPhoto"
+        android:textStyle="italic"
+        android:textColor="#aeaeae"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="#F30"
+        android:text="Delete"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:layout_above="@+id/layourcomments"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tvAddress"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@+id/tvDistrict"
+        android:layout_toRightOf="@+id/tvDistrict"
+        android:background="#F30"
+        android:text="Show on Map"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:id="@+id/layourcomments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/btnMap">
+
+        <ListView
+            android:id="@+id/lvComments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/tvType"
+        android:layout_toLeftOf="@+id/btnMap"
+        android:layout_toStartOf="@+id/btnMap"
+        />
+
+    <TextView
+        android:id="@+id/txtratecount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#F30"
+        android:layout_above="@+id/tvType"
+        android:layout_alignLeft="@+id/tvType"
+        android:layout_alignStart="@+id/tvType"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp" />
+
+    <TextView
+        android:id="@+id/tvR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnMap"
+        android:layout_alignBottom="@+id/btnMap"
+        android:layout_alignLeft="@+id/tvAddress"
+        android:layout_alignStart="@+id/tvAddress"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Reviews" />
+
+    <Button
+        android:id="@+id/btnRateit"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="#F30"
+        android:text="Rate"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/tvAddress"
+        android:layout_alignRight="@+id/ivPhoto"
+        android:layout_alignEnd="@+id/ivPhoto"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_alignTop="@+id/tvType" />
+
+
+</RelativeLayout>

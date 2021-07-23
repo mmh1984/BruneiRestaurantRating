@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Brunei Restaurants</string>
+
+    <string-array name="district">
+        <item>Brunei-Muara</item>
+        <item>Tutong</item>
+        <item>Kuala Belait</item>
+        <item>Temburong</item>
+
+    </string-array>
+
+    <string name="get_coordinates"><a href="https://www.gps-coordinates.net/">Open Map</a></string>
+</resources>
